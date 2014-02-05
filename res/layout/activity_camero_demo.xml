@@ -14,7 +14,9 @@
         android:id="@+id/image"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/ic_launcher" />
+        android:src="@drawable/ic_launcher"
+        android:padding="10dp"
+        android:scaleType="fitCenter" />
 
 </LinearLayout>
     

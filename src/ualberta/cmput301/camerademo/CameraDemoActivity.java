@@ -44,6 +44,8 @@ public class CameraDemoActivity extends Activity {
 	// need implement onAcitityResult() method.
 	public void takeAPhoto() {
 		Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+
+		intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.parse("/sdcard/tmp/abc.jpg"));
 		
 		// Start with result code 0
 		startActivityForResult(intent, 0);
